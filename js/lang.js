@@ -56,8 +56,8 @@ const langArr = {
     },
     "services-text" : {
         "ru": "Главной деятельностью маркетинга",
-        "ua": "Головною діяльністю маркетiнгу",
-        "en": "The main activity of Marketing",
+        "ua": "Головною діяльністю маркентiгу",
+        "en": "The main activity of marketing",
     },
     "services-card-title-1" : {
         "ru": "Печать флекс/флок плёнкой",
