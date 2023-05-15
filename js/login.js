@@ -41,7 +41,7 @@ resetChange.addEventListener('click', () => {
 
 loginBtn.addEventListener('click', () => {
     if (loginEmailInput.value.trim() !== '' && loginInputOne.value.trim() !== '') {
-        window.location.href = '/index.html'
+        window.location.href = '/masons-shop.github.io/index.html'
     } else {
         if (location.href.includes('#ru')) {
             alert('Введите все поля')
