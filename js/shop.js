@@ -21,9 +21,11 @@ headerBtn.onclick = () => {
     if (nav.classList.toggle('open')) {
         headerBtnIcon.innerHTML = '&#xf00d;'
         headerBtnIcon.style.position = 'static'
+        document.body.style.overflow = 'hidden'
     } else {
         headerBtnIcon.innerHTML = '&#xf0c9;'
         headerBtnIcon.style.position = 'static'
+        document.body.style.overflow = 'auto'
     }
 }
 
