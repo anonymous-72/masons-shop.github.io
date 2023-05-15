@@ -55,9 +55,9 @@ const langArr = {
         "en": "Our <span>services</span>",
     },
     "services-text" : {
-        "ru": "Главной деятельностью масонства",
-        "ua": "Головною діяльністю масонства",
-        "en": "The main activity of Freemasonry",
+        "ru": "Главной деятельностью маркетинга",
+        "ua": "Головною діяльністю маркетiнгу",
+        "en": "The main activity of Marketing",
     },
     "services-card-title-1" : {
         "ru": "Печать флекс/флок плёнкой",
