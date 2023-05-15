@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="icon" href="/img/header/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="/libs/autoComplete.js-10.2.7/dist/css/autoComplete.01.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+</head>
+<body>
+
+    <header class="header mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center text-center align-items-center flex-wrap flex-row">
+                    <div class="header__input col-xl-4 col-md col-sm">
+                        <input autocomplete="off" type="text" class="header__search rounded-pill border border-light font-size-12 text-light lng-search" id="list" placeholder="Поиск">
+                    </div>
+                    <div class="header__logo col-xl-4 col-md-6 col-sm col-3">
+                        <a href="/index.html"><img src="/img/header/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm col-6 header__links d-flex justify-content-center gap-3 align-items-center">
+                        <select class="header__languages form-select">
+                            <option value="ru" class="header__language">RU</option>
+                            <option value="ua" class="header__language">UA</option>
+                            <option value="en" class="header__language">EN</option>
+                        </select>
+                        <div class="header__btns d-flex gap-3">
+                            <a href="/cart.html" class="header__cart"><img src="/img/icons/cart.svg" alt="Cart" class="img-fluid header__img"></a>
+                            <a href="/profile.html" class="header__like"><img src="/img/icons/like.svg" alt="Like" class="img-fluid header__img"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button class="header__btn" id="header__btn">
+                            <i class="fa header__button-icon" id="header__button-icon">&#xf0c9;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav mt-5" id="nav">
+        <div class="container">
+            <div class="row nav__links">
+                <div class="d-flex justify-content-center gap-5 text-center flex-wrap">
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="/index.html" class="nav__link lng-nav-1">Главная</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="#" class="nav__link nav__link--active lng-nav-2">Каталог</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="/clothes.html" class="nav__link lng-nav-3">Одежда</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="/cart.html" class="nav__link lng-nav-4">Корзина</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="/profile.html" class="nav__link lng-nav-6">Профиль</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12">
+                        <a href="/login.html" class="nav__link lng-nav-7">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="tshirts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tshirts__heading d-flex justify-content-between align-items flex-wrap gap-5">
+                        <div class="section__heading">
+                            <h3 class="lng-tshirts-title"><span>Фут</span>болки</h3>
+                            <p class="lng-tshirts-text">Любые размеры и формы</p>
+                        </div>
+                        <div class="tshirts__options d-flex gap-5 flex-wrap">
+                            <div class="tshirts__selects d-flex align-items-center gap-3">
+                                <span class="tshirts__select-title lng-tshirts-select-title-1">Сортировка:</span>
+                                  <select class="main-select tshirts__select tshirts__sort-select" aria-label="Default select example">
+                                    <option value="1" class="tshirts__sort-link lng-tshirts-option-link-1" selected>Дешевле - Дороже</option>
+                                    <option value="2" class="tshirts__sort-link lng-tshirts-option-link-2">Дороже - Дешевле</option>
+                                  </select>  
+                            </div>
+                            <div class="tshirts__selects d-flex align-items-center gap-3">
+                                <span class="tshirts__select-title lng-tshirts-select-title-2">На странице:</span>
+                                  <select class="main-select tshirts__select tshirts__amount-select" aria-label="Default select example">
+                                    <option value="4">4</option>
+                                    <option value="8">8</option>
+                                    <option value="12">12</option>
+                                    <option value="16" selected>16</option>
+                                  </select>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tshirts__cards d-flex justify-content-center flex-wrap align-items-center">
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5 flex-wrap">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-1 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">3999.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-2 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4029.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-3 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4059.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-4 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4089.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-5 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4119.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-6 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4149.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-7 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4179.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-8 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4209.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-9 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4239.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-10 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4269.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-11 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4299.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-12 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4329.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-13 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4359.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-14 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4389.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-15 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4419.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-16 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4449.00₽</p>
+                </div>
+            </div>
+
+            <div class="row tshirts__cards d-flex justify-content-center flex-wrap align-items-center none">
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-18 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4029.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5 flex-wrap">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-17 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">3999.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-20 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4089.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-19 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4059.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-22 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4149.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-21 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4119.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-24 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4209.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-23 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4179.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-26 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4269.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-25 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4239.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-28 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4329.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-27 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4299.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-30 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4389.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-29 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4359.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-32 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4449.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-31 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4419.00₽</p>
+                </div>
+            </div>
+
+            <div class="row tshirts__cards d-flex justify-content-center flex-wrap align-items-center none">
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5 flex-wrap">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-33 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">3999.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-34 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4029.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-35 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4059.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-36 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4089.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-37 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4119.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-38 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4149.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-39 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4179.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-40 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4209.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-41 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4239.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-42 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4269.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-43 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4299.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center mb-5">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-44 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4329.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-45 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4359.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-46 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4389.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Tshirt" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-47 hits__whiteshirt-link">Футболка Белая</a>
+                    <p class="tshirts__card-cost">4419.00₽</p>
+                </div>
+                <div class="tshirts__card col-xl-3 col-lg-3 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="tshirts__card-link lng-tshirts-card-link-48 hits__yellowhoodie-link">Худи Жёлтое</a>
+                    <p class="tshirts__card-cost">4449.00₽</p>
+                </div>
+            </div>
+
+            <div class="row tshirts__pagination">
+                <nav aria-label="...">
+                    <ul class="pagination pagination-lg justify-content-center gap-4">
+                      <li class="page-item" aria-current="page"><a href="#!" class="tshirts__page-link active">1</a></li>
+                      <li class="page-item"><a href="#!" class="tshirts__page-link">2</a></li>
+                      <li class="page-item"><a href="#!" class="tshirts__page-link">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__row d-flex justify-content-center align-items-center flex-wrap mx-auto">
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-3">
+                            <a href="#" class="footer__logo"><img src="/img/header/logo.png" alt="Logo" class="img-fluid"></a>
+                            <div class="footer__btns d-flex align-items-center gap-4">
+                                <a href="#!" class="contact__link"><img src="/img/icons/telegram.svg" alt="Telegram"></a>
+                                <a href="#!" class="contact__link"><img src="/img/icons/instagram.svg" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-1">Информация</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-1">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-2">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-3">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-4">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-2">Контакты</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-5">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-6">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-7">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-8">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-1">
+                            <div class="footer__heading">
+                                <h4 class="text-light lng-footer-title-3">Узнавай о новинках первым</h4>
+                                <p class="lng-footer-text">Получай от нас смс с сюрпризами</p>
+                            </div>
+                            <form action="" class="footer__form d-flex align-items-center gap-3">
+                                <input type="email" class="footer__input" placeholder="Email">
+                                <button class="footer__btn lng-footer-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/autoComplete.js-10.2.7/docs/demo/js/autoComplete.min.js"></script>
+    <script src="/libs/custom-select/custom-select.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/lang.js"></script>
+    <script src="/js/input-dest.js"></script>
+    <script src="/js/shop.js"></script>
+    <script src="/js/clothes.js"></script>
+</body>
+</html>

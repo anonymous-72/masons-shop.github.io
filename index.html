@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masons</title>
+    <link rel="icon" href="/img/header/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="/libs/autoComplete.js-10.2.7/dist/css/autoComplete.01.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+</head>
+<body>
+
+    <header class="header mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center text-center flex-wrap flex-row">
+                    <div class="header__input col-xl-4 col-md col-sm">
+                        <input autocomplete="off" type="text" class="header__search rounded-pill border border-light font-size-12 text-light lng-search" id="list" placeholder="Поиск">
+                    </div>
+                    <div class="header__logo col-xl-4 col-md-6 col-sm col-3">
+                        <a href="#"><img src="/img/header/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm col-6 header__links d-flex justify-content-center gap-3 align-items-center">
+                        <select class="header__languages form-select">
+                            <option value="ru" class="header__language">RU</option>
+                            <option value="ua" class="header__language">UA</option>
+                            <option value="en" class="header__language">EN</option>
+                        </select>
+                        <div class="header__btns d-flex gap-3">
+                            <a href="/cart.html" class="header__cart"><img src="/img/icons/cart.svg" alt="Cart" class="img-fluid header__img"></a>
+                            <a href="/profile.html" class="header__like"><img src="/img/icons/like.svg" alt="Like" class="img-fluid header__img"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button class="header__btn" id="header__btn">
+                            <i class="fa header__button-icon" id="header__button-icon">&#xf0c9;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav mt-5" id="nav">
+        <div class="container">
+            <div class="row nav__links">
+                <div class="d-flex justify-content-center gap-5 text-center flex-wrap">
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="#" class="nav__link nav__link--active lng-nav-1">Главная</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/shop.html" class="nav__link lng-nav-2">Каталог</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/clothes.html" class="nav__link lng-nav-3">Одежда</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/cart.html" class="nav__link lng-nav-4">Корзина</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/profile.html" class="nav__link lng-nav-6">Профиль</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/login.html" class="nav__link lng-nav-7">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="ad mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="ad__row col-12">
+                    <img src="/img/header/boy.jpg" alt="Ad" class="ad__img">
+                    <div class="ad__info col-xl-5">
+                        <h1 class="ad__title text-uppercase">masons <span>branding</span> wordshop</h1>
+                        <p class="lng-ad-text">Высококачественная печать <br> Брендирование одежды и аксессуаров</p>
+                        <a href="/shop.html" class="ad__link text-uppercase lng-ad-btn">каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading mb-5">
+                        <h2 class="services__title text-center lng-services-title">Наши <span>услуги</span></h2>
+                        <p class="text-center lng-services-text">Главной деятельностью масонств</p>
+                    </div>
+                    <div class="row services__info d-flex justify-content-center gap-5">
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-1">Печать флекс/флок плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-1">Качественная печать При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-1">Подробней</a>
+                            <img src="/img/header/printing-machine.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-2">
+                                Печать 
+                                флекс/флок 
+                                плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-2">Качественная печать
+                                При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-2">Подробней</a>
+                            <img src="/img/header/fever.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-3">
+                                Печать 
+                                флекс/флок 
+                                плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-3">Качественная печать
+                                При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-3">Подробней</a>
+                            <img src="/img/header/printer.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-4">
+                                Печать 
+                                флекс/флок 
+                                плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-4">Качественная печать
+                                При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-4">Подробней</a>
+                            <img src="/img/header/printing-machine.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-5">
+                                Печать 
+                                флекс/флок 
+                                плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-5">Качественная печать
+                                При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-5">Подробней</a>
+                            <img src="/img/header/fever.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="services__card col-xl-4 col-md-6 col-sm-12 text-center">
+                            <h3 class="services__card-title text-uppercase lng-services-card-title-6">
+                                Печать 
+                                флекс/флок 
+                                плёнкой
+                            </h3>
+                            <p class="lng-services-card-text-6">Качественная печать
+                                При малых тиражах</p>
+                            <a href="#!" class="services__card-link lng-services-card-btn-6">Подробней</a>
+                            <img src="/img/header/printer.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="print">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section__heading">
+                        <h3 class="lng-print-title"><span>Пример</span> печати</h3>
+                        <p class="lng-print-text">Это может быть на тебе</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="print__offers d-flex justify-content-center align-items-center">
+                            <img src="/img/header/print-1.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-2.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-3.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="print__offers d-flex justify-content-center align-items-center">
+                            <img src="/img/header/print-2.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-3.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-1.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="print__offers d-flex justify-content-center align-items-center">
+                            <img src="/img/header/print-3.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-1.png" class="d-block w-100" alt="...">
+                            <img src="/img/header/print-2.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section__heading offers__heading">
+                        <h3 class="lng-offers-title"><span>Акции</span> и предложения</h3>
+                        <p class="lng-offers-text">Успей урвать себе</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row offers__row">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <div class="offers__info d-flex justify-content-center align-items-center flex-wrap">
+                          <div class="offers__text col-xl-6 col-md-6 col-sm-12">
+                              <h4 class="text-uppercase">Русский корабль</h4>
+                              <p>Купи футболку и 10% с каждой покупки пойдёт на нужды ВСУ, купи стильную футболку и поддержи своего брата на фронте</p>
+                              <a href="#!" class="text-uppercase">Подробней</a>
+                          </div>
+                          <div class="offers__img col-xl-6 col-md-6 col-sm-12">
+                              <img src="/img/header/print-3.png" alt="T-shirt" class="img-fluid offers__img">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <div class="offers__info d-flex justify-content-center align-items-center flex-wrap">
+                          <div class="offers__text col-xl-6 col-md-6 col-sm-12">
+                              <h4 class="text-uppercase">Російський корабель</h4>
+                              <p>Купи футболку і 10% з кожної покупки піде на потреби ЗСУ, купи стильну футболку і підтримай свого брата на фронті</p>
+                              <a href="#!" class="text-uppercase">Докладно</a>
+                          </div>
+                          <div class="offers__img col-xl-6 col-md-6 col-sm-12">
+                              <img src="/img/header/print-3.png" alt="T-shirt" class="img-fluid offers__img">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <div class="offers__info d-flex justify-content-center align-items-center flex-wrap">
+                          <div class="offers__text col-xl-6 col-md-6 col-sm-12">
+                              <h4 class="text-uppercase">Russian warship</h4>
+                              <p>Buy a T-shirt and 10% of each purchase will go to the needs of the Armed Forces, buy a stylish T-shirt and support your brother at the front</p>
+                              <a href="#!" class="text-uppercase">More details</a>
+                          </div>
+                          <div class="offers__img col-xl-6 col-md-6 col-sm-12">
+                              <img src="/img/header/print-3.png" alt="T-shirt" class="img-fluid offers__img">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="hits">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading hits__heading">
+                        <h2 class="text-center lng-hits-title">Топ про<span>даж</span></h2>
+                        <p class="text-center lng-hits-text">То, что вам нравиться</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hits__offers d-flex justify-content-center align-items-center text-center flex-wrap">
+                    <div class="hits__shirt col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <img src="/img/header/white-shirt.png" alt="Shirt" class="hits__shirt-white img-fluid">
+                        <a href="/clothes.html" class="hits__shirt-link lng-hits-shirt-1 hits__whiteshirt-link">Футболка белая</a>
+                        <h4 class="hits__cost">3999.00₽</h4>
+                    </div>
+                    <div class="hits__shirt col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <img src="/img/header/yellow-hoodie.png" alt="Shirt" class="img-fluid">
+                        <a href="/clothes.html" class="hits__shirt-link lng-hits-shirt-2 hits__yellowhoodie-link">Худи жёлтое</a>
+                        <h4 class="hits__cost">3999.00₽</h4>
+                    </div>
+                    <div class="hits__shirt col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <img src="/img/header/white-shirt.png" alt="Shirt" class="hits__shirt-white img-fluid">
+                        <a href="/clothes.html" class="hits__shirt-link lng-hits-shirt-3 hits__whiteshirt-link">Футболка белая</a>
+                        <h4 class="hits__cost">3999.00₽</h4>
+                    </div>
+                    <div class="hits__shirt col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <img src="/img/header/yellow-hoodie.png" alt="Shirt" class="img-fluid">
+                        <a href="/clothes.html" class="hits__shirt-link lng-hits-shirt-4 hits__yellowhoodie-link">Худи жёлтое</a>
+                        <h4 class="hits__cost">3999.00₽</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalogue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading catalogue__heading">
+                        <h2 class="text-center lng-catalogue-title">Ката<span>лог</span></h2>
+                        <p class="text-center lng-catalogue-text">Выбирай всё что по душе</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row catalogue__offers d-flex justify-content-center gap-5 flex-wrap align-items-center">
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-1">Футболка</a>
+                    <p class="lng-catalogue-card-text-1">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Hoodie" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-2">Худи</a>
+                    <p class="lng-catalogue-card-text-2">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-3">Чашки</a>
+                    <p class="lng-catalogue-card-text-3">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-4">Футболка</a>
+                    <p class="lng-catalogue-card-text-4">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Hoodie" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-5">Худи</a>
+                    <p class="lng-catalogue-card-text-5">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-6">Чашки</a>
+                    <p class="lng-catalogue-card-text-6">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-7">Футболка</a>
+                    <p class="lng-catalogue-card-text-7">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/white-shirt.png" alt="Hoodie" class="img-fluid hits__shirt-white">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-8">Худи</a>
+                    <p class="lng-catalogue-card-text-8">Эко материалы</p>
+                </div>
+                <div class="catalogue__card col-xl-4 col-md-6 col-sm-12 text-center">
+                    <img src="/img/header/yellow-hoodie.png" alt="Hoodie" class="img-fluid">
+                    <a href="#!" class="catalogue__card-link lng-catalogue-card-title-9">Чашки</a>
+                    <p class="lng-catalogue-card-text-9">Эко материалы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading feedback__heading">
+                        <h2 class="text-center lng-feedback-title">От<span>зы</span>вы</h2>
+                        <p class="mx-auto text-center lng-feedback-text">Только посмотри что о нас говорит твоя соседка</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feedback__slider d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                    <a href="#!" class="feedback__slider-btn feedback__slider-btn-prev"><img src="/img/icons/arrow-left.svg" alt="Arrow"></a>
+                    <div class="feedback__slider-imgs">
+                        <img src="/img/header/iphone.png" alt="iPhone" class="img-fluid feedback__slider-img">
+                        <img src="/img/header/iphone.png" alt="iPhone" class="img-fluid feedback__slider-img">
+                        <img src="/img/header/iphone.png" alt="iPhone" class="img-fluid feedback__slider-img">
+                    </div>
+                    <a href="#!" class="feedback__slider-btn feedback__slider-btn-next"><img src="/img/icons/arrow-right.svg" alt="Arrow"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section__heading video__heading mb-5">
+                        <h3 class="lng-video-title">Ещё есть <span>сомнения?</span></h3>
+                        <p class="lng-video-text">Тогда посмотри это видео и сам всё поймёшь</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="video__container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Vo0lhfE8Jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="heading contact__heading">
+                    <h2 class="text-center lng-contact-title">Свяжитесь с <span>нами</span></h2>
+                    <p class="text-center lng-contact-text">Это бысто и удобно</p>
+                </div>
+            </div>
+            <div class="row contact__row d-flex justify-content-center align-items-center flex-wrap">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <form action="" class="contact__form d-flex justify-content-center flex-column gap-5 form-group">
+                        <div class="contact__inputs d-flex flex-column justify-content-center gap-4">
+                            <input type="text" class="contact__input contact__input-1 form-control" placeholder="Ваше имя">
+                            <input type="email" class="contact__input contact__input-2 form-control" placeholder="Email">
+                            <input type="tel" class="contact__input contact__input-3 form-control" placeholder="Телефон">
+                            <input type="text" class="contact__input contact__input-4 form-control" placeholder="Примечание">
+                        </div>
+                        <div class="contact__buttons d-flex flex-column justify-content-center gap-4">
+                            <button class="contact__btn text-uppercase lng-contact-button">отправить</button>
+                            <div class="contact__links d-flex gap-4">
+                                <a href="#!" class="contact__link"><img src="/img/icons/telegram.svg" alt="Telegram"></a>
+                                <a href="#!" class="contact__link"><img src="/img/icons/viber.svg" alt="Viber"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="contact__container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.3770455823!2d30.532690549999998!3d50.402035500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1682028074798!5m2!1sru!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center flex-wrap text-center gap-5">
+                <div class="cards__card col-xl-4 col-md-6 col-sm-12">
+                    <img src="/img/icons/schedule.svg" alt="Schedule">
+                    <h4 class="lng-cards-title-1">График</h4>
+                    <p class="text-light lng-cards-text-1">ПН-ПТ:<br>9:00 - 18:00</p>
+                </div>
+                <div class="cards__card col-xl-4 col-md-6 col-sm-12">
+                    <img src="/img/icons/map.svg" alt="Map">
+                    <h4 class="lng-cards-title-2">Карта</h4>
+                    <p class="text-light lng-cards-text-2">г. Киев <br>ул. Название</p>
+                </div>
+                <div class="cards__card col-xl-4 col-md-6 col-sm-12">
+                    <img src="/img/icons/phone.svg" alt="Phone">
+                    <h4 class="lng-cards-title-3">Контакты</h4>
+                    <a href="tel:+38(099)-999-99-99">+38(099)-999-99-99</a>
+                    <a href="mailto:gmailexamp@gmail.com">gmailexamp@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__row d-flex justify-content-center align-items-center flex-wrap mx-auto">
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-3">
+                            <a href="#" class="footer__logo"><img src="/img/header/logo.png" alt="Logo" class="img-fluid"></a>
+                            <div class="footer__btns d-flex align-items-center gap-4">
+                                <a href="#!" class="contact__link"><img src="/img/icons/telegram.svg" alt="Telegram"></a>
+                                <a href="#!" class="contact__link"><img src="/img/icons/instagram.svg" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-1">Информация</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-1">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-2">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-3">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-4">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-2">Контакты</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-5">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-6">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-7">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-8">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-1">
+                            <div class="footer__heading">
+                                <h4 class="text-light lng-footer-title-3">Узнавай о новинках первым</h4>
+                                <p class="lng-footer-text">Получай от нас смс с сюрпризами</p>
+                            </div>
+                            <form action="" class="footer__form d-flex align-items-center gap-3">
+                                <input type="email" class="footer__input" placeholder="Email">
+                                <button class="footer__btn lng-footer-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/autoComplete.js-10.2.7/docs/demo/js/autoComplete.min.js"></script>
+    <script src="/libs/custom-select/custom-select.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/lang.js"></script>
+    <script src="/js/input-dest.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/clothes.js"></script>
+    <script src="/js/currencies.js"></script>
+</body>
+</html>

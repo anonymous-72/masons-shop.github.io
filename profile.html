@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" href="/img/header/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="/libs/autoComplete.js-10.2.7/dist/css/autoComplete.01.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+</head>
+<body>
+    
+    <header class="header mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center text-center align-items-center flex-wrap flex-row">
+                    <div class="header__input col-xl-4 col-md col-sm">
+                        <input autocomplete="off" type="text" class="header__search rounded-pill border border-light font-size-12 text-light lng-search" id="list" placeholder="Поиск">
+                    </div>
+                    <div class="header__logo col-xl-4 col-md-6 col-sm col-3">
+                        <a href="#"><img src="/img/header/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm col-6 header__links d-flex justify-content-center gap-3 align-items-center">
+                        <select class="header__languages form-select">
+                            <option value="ru" class="header__language">RU</option>
+                            <option value="ua" class="header__language">UA</option>
+                            <option value="en" class="header__language">EN</option>
+                        </select>
+                        <div class="header__btns d-flex gap-3">
+                            <a href="/cart.html" class="header__cart"><img src="/img/icons/cart.svg" alt="Cart" class="img-fluid header__img"></a>
+                            <a href="#" class="header__like"><img src="/img/icons/like.svg" alt="Like" class="img-fluid header__img"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button class="header__btn" id="header__btn">
+                            <i class="fa header__button-icon" id="header__button-icon">&#xf0c9;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav mt-5" id="nav">
+        <div class="container">
+            <div class="row nav__links">
+                <div class="d-flex justify-content-center gap-5 text-center flex-wrap">
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/index.html" class="nav__link lng-nav-1">Главная</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/shop.html" class="nav__link lng-nav-2">Каталог</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/clothes.html" class="nav__link lng-nav-3">Одежда</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/cart.html" class="nav__link lng-nav-4">Корзина</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="#!" class="nav__link nav__link--active lng-nav-6">Профиль</a>
+                    </div>
+                    <div class="col-xl-1 col-md col-sm-12 col-12 text-center">
+                        <a href="/login.html" class="nav__link lng-nav-7">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="profile__heading section__heading text-center">
+                        <h3 class="profile__heading-title lng-profile-heading-title">Профиль</h3>
+                        <a href="/login.html" class="profile__heading-link lng-profile-heading-link">Выйти</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="profile__columns d-flex justify-content-around flex-wrap">
+                    <div class="profile__column d-flex flex-column align-items-center">
+                        <h3 class="profile__column-title text-center lng-profile-column-title-1">История заказов</h3>
+                        <div class="profile__column-card d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/yellow-hoodie.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-1 hits__yellowhoodie-link">Худи Жёлтое</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-1">худи, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                        <div class="profile__column-card d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/yellow-hoodie.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-2 hits__yellowhoodie-link">Худи Жёлтое</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-2">худи, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                        <div class="profile__column-card d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/yellow-hoodie.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-3 hits__yellowhoodie-link">Худи Жёлтое</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-3">худи, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__column d-flex flex-column align-items-center">
+                        <h3 class="profile__column-title profile__column-title-two text-center lng-profile-column-title-2">Избранное</h3>
+                        <div class="profile__column-card profile__column-card-2 d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/white-shirt.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-4 hits__whiteshirt-link">Футболка Белая</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-4">футболка, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                        <div class="profile__column-card profile__column-card-2 d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/white-shirt.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-5 hits__whiteshirt-link">Футболка Белая</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-5">футболка, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                        <div class="profile__column-card profile__column-card-2 d-flex align-items-center gap-3">
+                            <div class="profile__column-img">
+                                <img src="/img/profile/white-shirt.png" alt="Yellow Hoodie" class="img-fluid">
+                            </div>
+                            <div class="profile__column-info">
+                                <a href="/clothes.html" class="profile__column-info-title lng-profile-clothes-title-6 hits__whiteshirt-link">Футболка Белая</a>
+                                <p class="profile__column-info-subtitle lng-profile-clothes-subtitle-6">футболка, одежда</p>
+                                <h4 class="profile__column-info-cost">3999.00₽</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__row d-flex justify-content-center align-items-center flex-wrap mx-auto">
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-3">
+                            <a href="#" class="footer__logo"><img src="/img/header/logo.png" alt="Logo" class="img-fluid"></a>
+                            <div class="footer__btns d-flex align-items-center gap-4">
+                                <a href="#!" class="contact__link"><img src="/img/icons/telegram.svg" alt="Telegram"></a>
+                                <a href="#!" class="contact__link"><img src="/img/icons/instagram.svg" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-1">Информация</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-1">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-2">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-3">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-4">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-2">
+                            <h4 class="text-light lng-footer-title-2">Контакты</h4>
+                            <div class="footer__links d-flex flex-column gap-1">
+                                <a href="#!" class="footer__link lng-footer-link-5">Каталог</a>
+                                <a href="#!" class="footer__link lng-footer-link-6">О нас</a>
+                                <a href="#!" class="footer__link lng-footer-link-7">Доставка и оплата</a>
+                                <a href="#!" class="footer__link lng-footer-link-8">Возвращение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="footer__info d-flex flex-column gap-1">
+                            <div class="footer__heading">
+                                <h4 class="text-light lng-footer-title-3">Узнавай о новинках первым</h4>
+                                <p class="lng-footer-text">Получай от нас смс с сюрпризами</p>
+                            </div>
+                            <form action="" class="footer__form d-flex align-items-center gap-3">
+                                <input type="email" class="footer__input" placeholder="Email">
+                                <button class="footer__btn lng-footer-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/autoComplete.js-10.2.7/docs/demo/js/autoComplete.min.js"></script>
+    <script src="/libs/custom-select/custom-select.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/lang.js"></script>
+    <script src="/js/input-dest.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/clothes.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>
