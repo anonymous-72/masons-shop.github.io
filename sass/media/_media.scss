@@ -7,9 +7,6 @@
 }
 
 @media (max-width: 900px) {
-    .ad {
-        margin-bottom: 150px;
-    }
     .ad__info {
         h1 {
             font-size: 30px;
@@ -107,6 +104,10 @@
 }
 
 @media (max-width: 600px) {
+    .ad {
+        margin-bottom: 150px;
+    }
+    
     .heading {
         h2 {
             font-size: 50px;
