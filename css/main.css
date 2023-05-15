@@ -135,7 +135,7 @@ header {
     box-shadow: 0px 0px 10px 1px #FFC700; }
 
 .header__search {
-  background-image: url("/img/icons/search.svg");
+  background-image: url("/masons-shop.github.io/img/icons/search.svg");
   background-repeat: no-repeat;
   background-position: top 9px left 15px;
   padding: 7px 32px 8px 32px;
@@ -160,7 +160,7 @@ header {
   background-color: #070707;
   border: none;
   color: #fff;
-  background-image: url("/img/icons/arrow-down.svg"); }
+  background-image: url("/masons-shop.github.io/img/icons/arrow-down.svg"); }
   .form-select:focus {
     background-color: #000 !important;
     color: #FFC700 !important;
