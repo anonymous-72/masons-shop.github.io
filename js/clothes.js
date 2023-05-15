@@ -8,7 +8,7 @@ whiteShirtLinks.forEach((whiteShirtLink) => {
     whiteShirtLink.addEventListener('click', (e) => {
         e.preventDefault()
         localStorage.setItem('selectedCard', 'whiteShirtCard')
-        window.location.href = '/clothes.html'
+        window.location.href = '/masons-shop.github.io/clothes.html'
     })
 })
 
@@ -16,7 +16,7 @@ yellowHoodieLinks.forEach((yellowHoodieLink) => {
     yellowHoodieLink.addEventListener('click', (e) => {
         e.preventDefault()
         localStorage.setItem('selectedCard', 'yellowHoodieCard')
-        window.location.href = '/clothes.html'
+        window.location.href = '/masons-shop.github.io/clothes.html'
     })
 })
 
