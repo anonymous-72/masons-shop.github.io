@@ -1,0 +1,19 @@
+.heading {
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 72px;
+        color: $text-color;
+    }
+    
+    span {
+        color: $yellow;
+    }
+
+    p {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        color: #949494;
+    }
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: $bg-main;
+    color: $text-color;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+
+    button {
+        display: none;
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+@keyframes change-color-card-1 {
+    1% {background-color: transparent;}
+    12% {background-color: #ac8c18;}
+    25% {background-color: transparent;}
+}
+
+@keyframes change-color-card-2 {
+    25% {background-color: transparent;}
+    37% {background-color: #ac8c18;}
+    50% {background-color: transparent;}
+}
+
+@keyframes change-color-card-3 {
+    50% {background-color: transparent;}
+    62% {background-color: #ac8c18;}
+    75% {background-color: transparent;}
+}
+
+@keyframes change-color-card-4 {
+    75% {background-color: transparent;}
+    87% {background-color: #ac8c18;}
+    100% {background-color: transparent;}
+}
+

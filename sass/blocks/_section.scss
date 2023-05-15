@@ -1,0 +1,23 @@
+.section__heading {
+    font-family: 'Montserrat', sans-serif;
+    h3 {
+        font-weight: 600;
+        font-size: 48px;
+    
+        span {
+            color: $yellow;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 32px;
+        color: #b8b8b8;
+    }
+}
+
+.section__slider {
+    max-width: 1544px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,85 @@
+.tshirts {
+    margin-top: 110px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tshirts__select-title {
+    font-size: 20px;
+}
+
+.tshirts__cards {
+    margin-top: 121px;
+    margin-bottom: 130px;
+
+    .tshirts__card {
+        width: 300px;
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+        font-weight: 300;
+        font-size: 20px;
+        color: #fff;
+        line-height: 24px;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: $yellow;
+        }
+
+        
+        &:hover::before {
+            transform: scaleX(1);
+            transition: transform 0.5s;
+            transform-origin: left;
+        }
+        
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: $yellow;
+            left: 0;
+            bottom: 0px;
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+.tshirts__pagination {
+    height: 175px;
+    ul {
+        li {
+            .tshirts__page-link {
+                display: block;
+                padding: 10px 20px;
+                background-color: #252525;
+                font-weight: 500;
+                font-size: 24px;
+                color: $text-color;
+                transition: all 0.2s ease-in;
+
+                &:hover {
+                    background-color: $yellow;
+                    color: #000;
+                }
+
+                &.active {
+                    background-color: $yellow!important;
+                    font-weight: 700;
+                    font-size: 32px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+

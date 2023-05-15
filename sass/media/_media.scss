@@ -1,0 +1,193 @@
+@media (max-width: 1000px) {
+    .feedback__slider {
+        a {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .ad__info {
+        h1 {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 26px;
+        }
+        a {
+            padding: 10px 21px;
+            font-size: 16px;
+        }
+    }
+
+    .offers__text {
+        max-width: 350px;
+        h4 {
+            padding-top: 50px;
+            font-size: 36px;
+        }
+        p {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        display: block;
+        button {
+            position: absolute;
+            z-index: 9999;
+            top: 52px;
+            right: 30px;
+        }
+    }
+
+    .header__btn {
+        display: block;
+    }
+
+    .header__input {
+        display: none;
+    }
+
+    .nav__links {
+        display: none;
+    }
+    
+    .nav.open .nav__links {
+        padding: 100px 0 0 50px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        background-color: #070707;
+        z-index: 999;
+        text-align: inherit;
+        text-align-last: left;
+
+        a {
+            padding: 6px 15px 8px 15px;
+            font-size: 14px;
+
+            &--active, &:hover {
+                width: 82px;
+                height: 25px;
+                color: #090909;
+                font-weight: 700;
+                background-color: #fff;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .contact__row {
+        row-gap: 50px;
+    }
+
+    .footer__row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__info {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .section__heading {
+        h3 {
+            font-size: 44px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .ad__info {
+        top: 25px;
+        left: 25px;
+    }
+
+    .contact__heading {
+        margin-bottom: 100px;
+    }
+
+    .login__card {
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+    .clothes__desc {
+        text-align: center;
+    }
+
+    .clothes__desc-selects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clothes__btns {
+        justify-content: center;
+    }
+
+    .reviews__heading {
+        flex-direction: column;
+
+        button {
+            margin-left: inherit;
+            margin-bottom: 40px;
+        }
+    }
+
+    .recommendations__title {
+        text-align: center;
+    }
+
+    .cart__card {
+        text-align: center;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-bottom: 30px;
+
+        &-selects {
+            flex-direction: row;
+        }
+
+        &-message {
+            text-align: center;
+        }
+    }
+
+    .order__checks {
+        h4 {
+            font-size: 16px;
+        }
+
+        label {
+            width: 130px;
+            font-size: 12px;
+        }
+    }
+}

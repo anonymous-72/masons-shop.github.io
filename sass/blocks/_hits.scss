@@ -1,0 +1,53 @@
+.hits {
+    margin-bottom: 226px;
+}
+
+.hits__heading {
+    margin-bottom: 95px;
+}
+
+.hits__shirt {
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    font-family: 'Montserrat', sans-serif;
+
+    &-link {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+
+    &-white {
+        margin-bottom: 13px;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 24px;
+        color: $text-color;
+    }
+}
+
+.hits__shirt:nth-child(1) {
+    animation: change-color-card-1 8s infinite;
+}
+
+.hits__shirt:nth-child(2) {
+    animation: change-color-card-2 8s infinite;
+}
+
+.hits__shirt:nth-child(3) {
+    animation: change-color-card-3 8s infinite;
+}
+
+.hits__shirt:nth-child(4) {
+    animation: change-color-card-4 8s infinite;
+}

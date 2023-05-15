@@ -1,0 +1,18 @@
+.clothes__counter-btn {
+    display: flex;
+    background-color: $yellow;
+    color: #000;
+    padding: 6px 15px;
+    font-family: 'Inter', sans-serif;
+
+    input[type="number"] {
+        text-align: center;
+        max-width: 40px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

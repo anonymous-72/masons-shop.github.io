@@ -1,0 +1,45 @@
+.offers {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 162px;
+    margin-bottom: 197px;
+    // background-image: url('/img/header/yellow-bg.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    padding-bottom: 100px;
+}
+
+.offers__heading {
+    margin-bottom: 100px;
+}
+
+.offers__text {
+    max-width: 587px;
+    h4 {
+        font-weight: 700;
+        font-size: 52px;
+        color: $yellow;
+        margin-bottom: 10px;
+        text-shadow: 0px 0px 7px $yellow
+    }
+
+    p {
+        font-size: 24px;
+        color: $text-color;
+        line-height: 29px;
+        padding-bottom: 34px;
+    }
+
+    a {
+        padding: 20px 29px;
+        font-weight: 800;
+        font-size: 20px;
+        color: #262626;
+        background-color: $yellow;
+        box-shadow: 0px 0px 10px 1px $yellow;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: #ac8c18;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.black-btn {
+    font-family: 'Inter', sans-serif;
+    padding: 15px;
+    color: $yellow;
+    border: 2px solid $yellow;
+    width: 200px;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $yellow;
+        color: #080808;
+        font-weight: 600;
+    }
+}

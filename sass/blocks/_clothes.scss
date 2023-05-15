@@ -1,0 +1,91 @@
+.clothes {
+    margin-top: 70px;
+}
+
+.clothes__row {
+    max-width: 1149px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clothes__desc {
+
+    h2 {
+        font-size: 60px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #b5b5b5;
+        line-height: 10px;
+    }
+
+    .clothes__desc-rating {
+        margin-bottom: 35px;
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        color: $yellow;
+        margin-bottom: 42px;
+    }
+
+    .clothes__desc-selects {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 37px;
+        span {
+            font-family: 'Inter', sans-serif;
+        }
+
+        select {
+            padding: 6px 15px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        option {
+            font-weight: 400;
+        }
+    }
+
+    .clothes__btns {
+        .clothes__btn-buy {
+            font-size: 18px;
+            padding: 19px 60px;
+        }
+
+        .fa-heart {
+            color: #2c2c2c;
+            transition: all 0.2s ease-in;
+
+            &.active {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.clothes__description {
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 137px;
+
+    p {
+        font-size: 24px;
+        color: #a5a5a5;
+    }
+}
+
+.clothes-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.recommendations {
+    margin-bottom: 162px;
+}

@@ -1,0 +1,42 @@
+.catalogue {
+    margin-bottom: 186px;
+}
+
+.catalogue__heading {
+    margin-bottom: 159px;
+}
+
+.catalogue__card {
+    width: 380px;
+    height: 400px;
+    background-color: #101010;
+    padding: 45px 50px 39px 50px;
+
+    a {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #fff;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: $yellow;
+    }
+}
+
+
+
+
+
+
+

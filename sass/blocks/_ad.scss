@@ -1,0 +1,48 @@
+.ad {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 260px;
+}
+
+.ad__row {
+    position: relative;
+}
+
+.ad__info {
+    position: absolute;
+    top: 151px;
+    left: 85px;
+    max-width: 542px;
+
+    h1 {
+        font-weight: 800;
+        font-size: 82px;
+        margin-bottom: 36px;
+
+        span {
+            color: $yellow;
+            text-shadow: 0px 0px 7px $yellow;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 24px;
+        color: $grey-sec;
+        margin-bottom: 46px;
+    }
+
+    a {
+        padding: 21px 47px;
+        background-color: $yellow;
+        color: #1c1c1c;
+        font-weight: 800;
+        font-size: 20px;
+        box-shadow: 0px 0px 10px 1px $yellow;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: #ac8c18;
+        }
+    }
+}
+

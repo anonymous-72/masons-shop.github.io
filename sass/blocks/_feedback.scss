@@ -1,0 +1,28 @@
+.feedback {
+    margin-bottom: 185px;
+}
+
+.feedback__heading {
+    margin-bottom: 155px;
+
+    p {
+        max-width: 675px;
+    }
+}
+
+.feedback__slider {
+    a {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 37px 42px;
+        background-color: #303030;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}
+
